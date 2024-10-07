@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../images/sincerely-media-p-NQlmGvFC8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+body .logo {
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: -60px;
+
+}
+
+.wrapper {
+    width: 420px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    text-align: center;
+
+}
+
+.rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    margin: 20px auto;
+    border: 2px solid #270b5f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.rectangle:hover {
+    background-color: #ffffff;
+}
+
+
+.wrapper .loginLink a {
+    font-size: larger;
+    align-items: center;
+    text-decoration: none;
+    margin: 10px;
+
+    /* Taille de la police */
+    color: #f6f3f3;
+    /* Couleur du texte */
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        color: #6e15dc;
+    }
+
+    50% {
+        transform: scale(1.1);
+        color: #270b5f;
+    }
+
+    100% {
+        transform: scale(1);
+        color: #270b5f;
+    }
+}
